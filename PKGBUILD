@@ -49,7 +49,7 @@ _majver="11"
 pkgname="${_pkg}${_majver}"
 pkgver="${_majver}.0.2"
 _commit="0c9fce2ffefecfdce794e1859584e25877b7b592"
-pkgrel=4
+pkgrel=6
 pkgdesc='Open-source formatting library for C++'
 arch=(
   'x86_64'
@@ -85,7 +85,7 @@ makedepends=(
 )
 provides=(
   "lib${_pkg}.so=${_majver}-64"
-  "${_pkg}"
+  "${_pkg}=${pkgver}"
 )
 _tag_name="commit"
 _tag="${_commit}"
